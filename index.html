@@ -9,13 +9,20 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Фигуры на CSS</title>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/btn-nav_menu.js"></script>
+  <script src="js/code-copy.js"></script>
 </head>
   <body>
-    <header>
-      <h1>Фигуры на CSS</h1>
-    </header>
     <main class="wrapper">
+      <header class="header">
+        <div class="nav">
+          <a href="#" class="btn-nav">
+            <span></span>
+          </a>
+        </div>
+        <h1>Фигуры на CSS</h1>
+      </header>
       <section class="row">
         <article class="block">
           <div class="figure-name center">Квадрат</div>
@@ -23,12 +30,19 @@
             <div class="figure square"></div>
           </div>
           <div class="figure-code center">
-              <code>
+            <div class="front">
+              <span>How to do this?</span>
+            </div>
+            <code class="code">
+              <div class="code-copy" id="copy">.square {width: 130px;height: 130px;background: #d91e18}</div>
+              <div class="code-wrap">
                 <span class="class-color">.square</span> {<br>
                   width: 130px;<br>
                   height: 130px;<br>
                   background: #d91e18;<br>
                 }
+                <button class="btn-copy" onclick="copytext('#copy')">Скопировать</button>
+              </div>
             </code>
           </div>
         </article>
@@ -38,12 +52,19 @@
             <div class="figure rectangle"></div>
           </div>
           <div class="figure-code center">
-              <code>
+            <div class="front">
+              <span>How to do this?</span>
+            </div>
+            <code class="code">
+              <div class="code-copy" id="copy2">.rectangle {width: 190px;height: 130px;background: #d91e18}</div>
+              <div class="code-wrap">
                 <span class="class-color">.rectangle</span> {<br>
                   width: 190px;<br>
                   height: 130px;<br>
                   background: #d91e18;<br>
                 }
+                <button class="btn-copy" onclick="copytext('#copy2')">Скопировать</button>
+              </div>
             </code>
           </div>
         </article>
@@ -53,13 +74,18 @@
             <div class="figure circle"></div>
           </div>
           <div class="figure-code center">
-              <code>
-                <span class="class-color">.circle</span> {<br>
-                  width: 130px;<br>
-                  height: 130px;<br>
-                  background: #d91e18;<br>
-                  border-radius: 50%;<br>
-                }
+            <div class="front"><span>How to do this?</span></div>
+              <code class="code">
+                <div class="code-copy" id="copy3">.circle {width: 130px;height: 130px;background: #d91e18;border-radius: 50%;}</div>
+                <div class="code-wrap">
+                  <span class="class-color">.circle</span> {<br>
+                    width: 130px;<br>
+                    height: 130px;<br>
+                    background: #d91e18;<br>
+                    border-radius: 50%;<br>
+                  }
+                  <button class="btn-copy" onclick="copytext('#copy3')">Скопировать</button>
+                </div>
             </code>
           </div>
         </article>
@@ -69,13 +95,18 @@
             <div class="figure oval"></div>
           </div>
           <div class="figure-code center">
-              <code>
-                <span class="class-color">.oval</span> {<br>
-                  width: 160px;<br>
-                  height: 100px;<br>
-                  background: #d91e18;<br>
-                  border-radius: 80px/50px;<br>
-                }
+            <div class="front"><span>How to do this?</span></div>
+              <code class="code">
+                <div class="code-copy" id="copy4">.oval {width: 160px;height: 100px;background: #d91e18;border-radius: 80px/50px;}</div>
+                <div class="code-wrap">
+                  <span class="class-color">.oval</span> {<br>
+                    width: 160px;<br>
+                    height: 100px;<br>
+                    background: #d91e18;<br>
+                    border-radius: 80px/50px;<br>
+                  }
+                  <button class="btn-copy" onclick="copytext('#copy4')">Скопировать</button>
+                </div>
             </code>
           </div>
         </article>
@@ -85,14 +116,19 @@
             <div class="figure triangle-down"></div>
           </div>
           <div class="figure-code center">
-              <code>
-                <span class="class-color">.triangle-down</span> {<br>
-                  width: 0;<br>
-                  height: 0;<br>
-                  border-left: 50px solid transparent;<br>
-                  border-right: 50px solid transparent;<br>
-                  border-top: 100px solid #d91e18;<br>
-                }
+            <div class="front"><span>How to do this?</span></div>
+              <code class="code">
+                <div class="code-copy" id="copy5">.triangle-down {width: 0;height: 0;border-left: 50px solid transparent;border-right: 50px solid transparent;border-top: 100px solid #d91e18;}</div>
+                <div class="code-wrap">
+                  <span class="class-color">.triangle-down</span> {<br>
+                    width: 0;<br>
+                    height: 0;<br>
+                    border-left: 50px solid transparent;<br>
+                    border-right: 50px solid transparent;<br>
+                    border-top: 100px solid #d91e18;<br>
+                  }
+                  <button class="btn-copy" onclick="copytext('#copy5')">Скопировать</button>
+                </div>
             </code>
           </div>
         </article>
@@ -102,14 +138,19 @@
             <div class="figure triangle-up"></div>
           </div>
           <div class="figure-code center">
-              <code>
-                <span class="class-color">.triangle-up</span> {<br>
-                  width: 0;<br>
-                  height: 0;<br>
-                  border-left: 50px solid transparent;<br>
-                  border-right: 50px solid transparent;<br>
-                  border-bottom: 100px solid #d91e18;<br>
-                }
+            <div class="front"><span>How to do this?</span></div>
+              <code class="code">
+                <div class="code-copy" id="copy6">.triangle-up {width: 0;height: 0;border-left: 50px solid transparent;border-right: 50px solid transparent;border-bottom: 100px solid #d91e18;}</div>
+                <div class="code-wrap">
+                  <span class="class-color">.triangle-up</span> {<br>
+                    width: 0;<br>
+                    height: 0;<br>
+                    border-left: 50px solid transparent;<br>
+                    border-right: 50px solid transparent;<br>
+                    border-bottom: 100px solid #d91e18;<br>
+                  }
+                  <button class="btn-copy" onclick="copytext('#copy6')">Скопировать</button>
+                </div>
             </code>
           </div>
         </article>
@@ -119,14 +160,19 @@
             <div class="figure triangle-left"></div>
           </div>
           <div class="figure-code center">
-              <code>
-                <span class="class-color">.triangle-left</span> {<br>
-                  width: 0;<br>
-                  height: 0;<br>
-                  border-top: 50px solid transparent;<br>
-                  border-bottom: 50px solid transparent;<br>
-                  border-right: 100px solid #d91e18;<br>
-                }
+            <div class="front"><span>How to do this?</span></div>
+              <code class="code">
+                <div class="code-copy" id="copy7">.triangle-left {width: 0;height: 0;border-top: 50px solid transparent;border-bottom: 50px solid transparent;border-right: 100px solid #d91e18;}</div>
+                <div class="code-wrap">
+                  <span class="class-color">.triangle-left</span> {<br>
+                    width: 0;<br>
+                    height: 0;<br>
+                    border-top: 50px solid transparent;<br>
+                    border-bottom: 50px solid transparent;<br>
+                    border-right: 100px solid #d91e18;<br>
+                  }
+                  <button class="btn-copy" onclick="copytext('#copy7')">Скопировать</button>
+                </div>
             </code>
           </div>
         </article>
@@ -136,14 +182,19 @@
             <div class="figure triangle-right"></div>
           </div>
           <div class="figure-code center">
-              <code>
-                <span class="class-color">.triangle-left</span> {<br>
-                  width: 0;<br>
-                  height: 0;<br>
-                  border-top: 50px solid transparent;<br>
-                  border-bottom: 50px solid transparent;<br>
-                  border-left: 100px solid #d91e18;<br>
-                }
+            <div class="front"><span>How to do this?</span></div>
+              <code class="code">
+                <div class="code-copy" id="copy8">.triangle-right {width: 0;height: 0;border-top: 50px solid transparent;border-bottom: 50px solid transparent;border-left: 100px solid #d91e18;}</div>
+                <div class="code-wrap">
+                  <span class="class-color">.triangle-left</span> {<br>
+                    width: 0;<br>
+                    height: 0;<br>
+                    border-top: 50px solid transparent;<br>
+                    border-bottom: 50px solid transparent;<br>
+                    border-left: 100px solid #d91e18;<br>
+                  }
+                  <button class="btn-copy" onclick="copytext('#copy8')">Скопировать</button>
+                </div>
             </code>
           </div>
         </article>
@@ -153,14 +204,19 @@
             <div class="figure trapezoid"></div>
           </div>
           <div class="figure-code center">
-              <code>
-                <span class="class-color">.trapezoid</span> {<br>
-                  height: 0;<br>
-                  width: 80px;<br>
-                  border-left: 35px solid transparent;<br>
-                  border-right: 35px solid transparent;<br>
-                  border-bottom: 90px solid #d91e18;<br>
-                }
+            <div class="front"><span>How to do this?</span></div>
+              <code class="code">
+                <div class="code-copy" id="copy9">.trapezoid {height: 0;width: 80px;border-left: 35px solid transparent;border-right: 35px solid transparent;border-bottom: 90px solid #d91e18;}</div>
+                <div class="code-wrap">
+                  <span class="class-color">.trapezoid</span> {<br>
+                    height: 0;<br>
+                    width: 80px;<br>
+                    border-left: 35px solid transparent;<br>
+                    border-right: 35px solid transparent;<br>
+                    border-bottom: 90px solid #d91e18;<br>
+                  }
+                  <button class="btn-copy" onclick="copytext('#copy9')">Скопировать</button>
+                </div>
             </code>
           </div>
         </article>
@@ -170,20 +226,25 @@
             <div class="figure parallelogram"></div>
           </div>
           <div class="figure-code center">
-              <code>
-                <span class="class-color">.parallelogram</span> {<br>
-                  width: 110px;<br>
-                  height: 100px;<br>
-                  transform: skew(-20deg);<br>
-                  background-color: #d91e18;<br>
-                }
+            <div class="front"><span>How to do this?</span></div>
+              <code class="code">
+                <div class="code-copy" id="copy10">.parallelogram {width: 110px;height: 100px;transform: skew(-20deg);background-color: #d91e18;}</div>
+                <div class="code-wrap">
+                  <span class="class-color">.parallelogram</span> {<br>
+                    width: 110px;<br>
+                    height: 100px;<br>
+                    transform: skew(-20deg);<br>
+                    background-color: #d91e18;<br>
+                  }
+                  <button class="btn-copy" onclick="copytext('#copy10')">Скопировать</button>
+                </div>
             </code>
           </div>
         </article>
       </section>
+      <footer>
+        <div class="footer"></div>
+      </footer>
     </main>
-    <footer>
-
-    </footer>
   </body>
 </html>
